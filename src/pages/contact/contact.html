@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+    	
+    	<form action="" class="search">
+    		<input id="submit" value="" type="submit">
+    		<label for="submit" class="submit"></label>
+    		<a href="javascript: void(0)" class="icon"></a>
+    		<input type="search" name="Search" id="search" placeholder="Search">
+    	</form>
+    	<script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    	
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div id="barra1">
+      <div id="ini1">Vistas Recientemente</div>
+      <div id="sig1">Siguiendo</div>
+      <div id="des1">Destacadas</div>
+      <div id="pro1">Proximas para ver</div>
+    </div>
+
+    <div id="todo1"
+        *ngFor="let currentCard of _cards">
+    <ion-card id="img1">
+        <img src="assets/imgs/{{currentCard.image}}">
+    </ion-card>
+
+    <div id="text1">
+        <p id="tit1">{{currentCard.title}}</p>
+        <p id="sinop1">{{currentCard.tiempo}}</p>
+    </div>
+    </div>
+
+</ion-content>
